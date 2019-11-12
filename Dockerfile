@@ -7,7 +7,7 @@ COPY . /go/src/github.com/jirwin/burrow_exporter
 RUN glide install
 RUN go build burrow-exporter.go
 
-FROM alpine
+FROM alpine:3.10.3
 COPY --from=glide /go/src/github.com/jirwin/burrow_exporter/burrow-exporter .
 ENV BURROW_ADDR http://localhost:8000
 ENV METRICS_ADDR 0.0.0.0:8080
