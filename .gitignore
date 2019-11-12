@@ -18,3 +18,10 @@
 burrow-exporter
 dist/
 vendor/
+
+.idea/$CACHE_FILE$
+.idea/.gitignore
+.idea/burrow_exporter.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
